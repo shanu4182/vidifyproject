@@ -1,0 +1,52 @@
+/* Root variables */
+:root {
+  --bodyBackground: #0b0b0b;
+  --componentBackground: #1f1f1f;
+  --textColor: #ffffff;
+  --hoverColor: rgb(43, 44, 44);
+}
+
+.search-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end; /* Align items to the left */
+  margin: 10px;
+}
+
+.search-filter .search-bar {
+  padding: 10px;
+  border: 1px solid var(--componentBackground);
+  border-radius: 4px;
+  background-color: var(--componentBackground);
+  color: var(--textColor);
+}
+
+.search-filter .search-bar::placeholder {
+  color: var(--textColor);
+}
+
+.search-filter .dropdowns {
+  display: flex;
+  gap: 20px;
+}
+
+.search-filter .dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-filter .dropdown-select {
+  padding: 10px;
+  border: 1px solid var(--componentBackground);
+  border-radius: 4px;
+  background-color: var(--componentBackground);
+  color: var(--textColor);
+}
+
+.search-filter .dropdown-select option {
+  background-color: var(--componentBackground);
+  color: var(--textColor);
+}
